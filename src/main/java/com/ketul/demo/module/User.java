@@ -33,12 +33,12 @@ public class User {
 		return "User [id=" + id + ", email=" + email + "]";
 	}
 	
-	public boolean equals(Object o) {
-		if(this == o)
+	public boolean equals(Object object) {
+		if(this == object)
 			return true;
 		else {
-			if(o instanceof User) {
-				User u = (User)o;
+			if(object instanceof User) {
+				User u = (User)object;
 				if(u.getId() == id)
 					return true;
 				else
